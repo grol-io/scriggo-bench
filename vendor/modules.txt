@@ -1,0 +1,84 @@
+# github.com/Shopify/go-lua v0.0.0-20210302141115-d8ac5566562d
+## explicit
+github.com/Shopify/go-lua
+# github.com/cosmos72/gomacro v0.0.0-20210624153544-b4935e406a41
+## explicit
+github.com/cosmos72/gomacro/ast2
+github.com/cosmos72/gomacro/atomic
+github.com/cosmos72/gomacro/base
+github.com/cosmos72/gomacro/base/dep
+github.com/cosmos72/gomacro/base/genimport
+github.com/cosmos72/gomacro/base/output
+github.com/cosmos72/gomacro/base/paths
+github.com/cosmos72/gomacro/base/reflect
+github.com/cosmos72/gomacro/base/strings
+github.com/cosmos72/gomacro/base/untyped
+github.com/cosmos72/gomacro/fast
+github.com/cosmos72/gomacro/gls
+github.com/cosmos72/gomacro/go/etoken
+github.com/cosmos72/gomacro/go/parser
+github.com/cosmos72/gomacro/go/printer
+github.com/cosmos72/gomacro/go/scanner
+github.com/cosmos72/gomacro/go/types
+github.com/cosmos72/gomacro/go/typeutil
+github.com/cosmos72/gomacro/imports
+github.com/cosmos72/gomacro/imports/syscall
+github.com/cosmos72/gomacro/imports/thirdparty
+github.com/cosmos72/gomacro/imports/util
+github.com/cosmos72/gomacro/xreflect
+# github.com/d5/tengo v1.24.8
+## explicit
+github.com/d5/tengo
+github.com/d5/tengo/compiler
+github.com/d5/tengo/compiler/ast
+github.com/d5/tengo/compiler/parser
+github.com/d5/tengo/compiler/scanner
+github.com/d5/tengo/compiler/source
+github.com/d5/tengo/compiler/token
+github.com/d5/tengo/objects
+github.com/d5/tengo/runtime
+github.com/d5/tengo/script
+# github.com/mattn/go-runewidth v0.0.12
+github.com/mattn/go-runewidth
+# github.com/open2b/scriggo v0.49.0
+## explicit
+github.com/open2b/scriggo
+github.com/open2b/scriggo/ast
+github.com/open2b/scriggo/ast/astutil
+github.com/open2b/scriggo/internal/compiler
+github.com/open2b/scriggo/internal/compiler/types
+github.com/open2b/scriggo/internal/runtime
+github.com/open2b/scriggo/internal/thirdparties
+github.com/open2b/scriggo/native
+# github.com/peterh/liner v1.2.1
+github.com/peterh/liner
+# github.com/rivo/uniseg v0.1.0
+github.com/rivo/uniseg
+# github.com/traefik/yaegi v0.9.23
+## explicit
+github.com/traefik/yaegi/interp
+# github.com/yuin/gopher-lua v0.0.0-20210529063254-f4c35e4016d9
+## explicit
+github.com/yuin/gopher-lua
+github.com/yuin/gopher-lua/ast
+github.com/yuin/gopher-lua/parse
+github.com/yuin/gopher-lua/pm
+# golang.org/x/mod v0.5.0
+golang.org/x/mod/semver
+# golang.org/x/sys v0.0.0-20210630005230-0f9fa26af87c
+golang.org/x/sys/execabs
+# golang.org/x/tools v0.1.5
+golang.org/x/tools/go/gcexportdata
+golang.org/x/tools/go/internal/gcimporter
+golang.org/x/tools/go/internal/packagesdriver
+golang.org/x/tools/go/packages
+golang.org/x/tools/internal/event
+golang.org/x/tools/internal/event/core
+golang.org/x/tools/internal/event/keys
+golang.org/x/tools/internal/event/label
+golang.org/x/tools/internal/gocommand
+golang.org/x/tools/internal/packagesinternal
+golang.org/x/tools/internal/typesinternal
+# golang.org/x/xerrors v0.0.0-20200804184101-5ec99f83aff1
+golang.org/x/xerrors
+golang.org/x/xerrors/internal
