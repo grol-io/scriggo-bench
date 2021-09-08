@@ -1,0 +1,30 @@
+--[[
+
+this test is disabled as both GopherLua and GoLua only support Lua5.1,
+while the utf8 library requires lua5.3
+
+local SIZE = 100
+
+local function containsRune(s, r)
+    for _, c in utf8.codes(s) do
+        if r == c then
+            return true
+        end
+    end
+    return false
+end
+
+local s = ""
+for r = 0, SIZE*2 - 1 do
+    if r%2 == 0 then
+        s = s .. utf8.char(r)
+    end
+end
+local n = 0
+for r = 0, SIZE*2 - 1 do
+    if containsRune(s, r) then
+        n = n + 1
+    end
+end
+
+--]]

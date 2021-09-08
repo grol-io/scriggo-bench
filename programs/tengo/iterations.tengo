@@ -1,0 +1,13 @@
+
+size := 400;
+s := [];
+
+for i := 0; i < size; i++ {
+    s = append(s, i)
+}
+
+for i := 0; i < len(s); i++ {
+    for j := 0; j < len(s); j++ {
+        s[j] += s[i];
+    }
+}
