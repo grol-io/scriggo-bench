@@ -8,6 +8,7 @@ import (
 	"bytes"
 	"embed"
 	_ "embed"
+	"io"
 	"io/fs"
 	"strings"
 	"testing"
@@ -26,11 +27,35 @@ import (
 	"github.com/traefik/yaegi/stdlib"
 
 	gophlua "github.com/yuin/gopher-lua"
+
+	grol "grol.io/grol/repl"
 )
 
 //go:embed programs/*
 var programsFolder embed.FS
 
+func BenchmarkGrol(b *testing.B) {
+	programs, err := loadPrograms("grol")
+	if err != nil {
+		b.Fatal(err)
+	}
+	for _, program := range programs {
+		b.Run(program.Name, func(b *testing.B) {
+			grol := grol.New()
+			err = grol.Parse(program.Code)
+			if err != nil {
+				b.Fatal(err)
+			}
+			b.ReportAllocs()
+			for n := 0; n < b.N; n++ {
+				err = grol.Run(io.Discard)
+				if err != nil {
+					b.Fatal(err)
+				}
+			}
+		})
+	}
+}
 func BenchmarkScriggo(b *testing.B) {
 	programs, err := loadPrograms("go")
 	if err != nil {
@@ -194,6 +219,7 @@ var extensionOf = map[string]string{
 	"javascript": "js",
 	"lua":        "lua",
 	"tengo":      "tengo",
+	"grol":       "gr",
 }
 
 func loadPrograms(language string) ([]testFile, error) {
