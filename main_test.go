@@ -48,6 +48,7 @@ func BenchmarkGrol(b *testing.B) {
 			}
 			b.ReportAllocs()
 			for n := 0; n < b.N; n++ {
+				grol.State.ResetCache()
 				err = grol.Run(io.Discard)
 				if err != nil {
 					b.Fatal(err)

@@ -66,5 +66,3 @@ gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405/go.mod h1:Co6ibVJAznAaIkqp8
 gopkg.in/check.v1 v1.0.0-20201130134442-10cb98267c6c/go.mod h1:JHkPIbrfpd72SG/EVd6muEfDQjcINNoR0C8j2r3qZ4Q=
 gopkg.in/yaml.v2 v2.4.0 h1:D8xgwECY7CYvx+Y2n4sBz93Jn9JRvxdiyyo8CTfuKaY=
 gopkg.in/yaml.v2 v2.4.0/go.mod h1:RDklbk79AGWmwhnvt/jBztapEOGDOx6ZbXqjP6csGnQ=
-grol.io/grol v0.26.0 h1:rrsWd0EhnEr8V+hiEU8Zvb5DBaiBvv1jS+T0v36faQM=
-grol.io/grol v0.26.0/go.mod h1:rRHlaB49q2Qgf2Zz2SfbkFzk9h+acpFbe7oCXqI9PiM=
